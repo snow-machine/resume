@@ -1,0 +1,80 @@
+\message{ !name(resume.tex)}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+
+\documentclass[UTF8]{ctexart}
+
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{framed}
+
+\begin{document}
+
+\message{ !name(face.tex) !offset(-21) }
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "resume"
+%%% End: 
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newenvironment{shell}{\footnotesize{}\linespread{0.9}\begin{shaded}}{\end{shaded}\linespread{1.0}\normalsize{}}
+
+% 首行缩进设置
+\setlength{\parindent}{2em}
+% 中文标题
+\CTEXsetup[number={\chinese{section}}]{section}
+\setlength{\fboxrule}{1pt}
+\setlength{\fboxsep}{5pt}
+
+% 页眉 页脚
+\pagestyle{fancy}
+\lfoot{FSF 2012} 
+\cfoot{the machine of awareness}
+\rfoot{\thepage} 
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{titlepage}
+  \begin{center}
+    % Upper part of the page
+    \includegraphics[width=2in]{images/gnu-head}
+    \textsc{\LARGE }\\[1.5cm]
+    \textsc{\Large }\\[0.5cm]
+
+    % Title
+    \HRule \\[0.4cm]
+    {\huge \bfseries 邵\ 勇\ 个\ 人\ 简\ 历 }\\[0.4cm]
+    \HRule \\[1.0cm]
+    \textsc{\large Life is real only then, when ``I am''\\
+      \quad{}G.I.GURDJIEFF}\\[2.0cm]
+
+    % Author and supervisor
+    \begin{minipage}{0.4\textwidth}
+      \begin{center} \large
+        编\quad{}写:\\
+        邵\qquad{}勇
+      \end{center}
+    \end{minipage}
+
+    \vfill
+    % Bottom of the page
+    {\large 网名：雪庭}\\ 
+    {\large 2015年01月05日}
+  \end{center}
+\end{titlepage}
+
+
+\message{ !name(resume.tex) !offset(-50) }
+
+\end{document}
+
